@@ -26,17 +26,27 @@ glimpse(nhanes)
 colSums(is.na(nhanes))
 ```
 
+```{r}
+analysis_ready <- nhanes |>
+  select(IncomeGroup, BMI) |>
+  filter(!is.na(BMI), !is.na(IncomeGroup)) |>
+  mutate(IncomeGroup = factor(IncomeGroup)) |>
+  rename(income_group = IncomeGroup, bmi = BMI) |>
+  arrange(income_group, bmi)
+
+analysis_ready
+```
+
 ## Summarize
 
 Replace this example with your own summary if you choose a different question.
 
 ```{r}
-bmi_summary <- nhanes |>
-  filter(!is.na(BMI), !is.na(IncomeGroup)) |>
-  group_by(IncomeGroup) |>
+bmi_summary <- analysis_ready |>
+  group_by(income_group) |>
   summarise(
     n = n(),
-    mean_bmi = mean(BMI),
+    mean_bmi = mean(bmi),
     .groups = "drop"
   )
 
@@ -54,6 +64,16 @@ mean_with_n <- function(x) {
 }
 
 mean_with_n(nhanes$BMI)
+
+SD_with_n <- function(x) {
+  tibble(
+    n = sum(!is.na(x)),
+    sd = sd(x, na.rm = TRUE)
+  )
+}
+
+SD_with_n(nhanes$BMI)
+
 ```
 
 ## Save Output
@@ -65,4 +85,4 @@ write_csv(bmi_summary, "assignments/assignment02-r-with-ai/submission/output/sum
 
 ## AI Audit Note
 
-Add comments explaining which parts were drafted or debugged with AI and how you verified the result.
+The code for a cleaned, analysis-ready table was generated through the AI chat function on Github. AI was also used to debug and improve the code as it was not running correctly as it was not in a Quarto document. Upon amendment of the code, I verified through inspecting the output from the code. I also verified by running through the checklist outlined in the week 3 material.  
