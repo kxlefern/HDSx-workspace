@@ -1,4 +1,9 @@
 # viz01
+
+```{r}
+3 + 3
+```
+
 ```{r}
 library(readr)
 library(dplyr)
@@ -28,7 +33,7 @@ nhanes_analysis |>
 ```{r}
 library(tidyverse)
 ```
-}
+
 ```{r}
 candidate_paths <- c(
   "examples/nhanes-equity/data/nhanes_equity_v6.csv",
@@ -57,7 +62,9 @@ ggplot(nhanes, aes(x = Age, y = Weight)) +
 
 ```{r}
 library(tidyverse)
+```
 
+```{r}
 candidate_paths <- c(
   "examples/nhanes-equity/data/nhanes_equity_v6.csv",
   "../../examples/nhanes-equity/data/nhanes_equity_v6.csv"
