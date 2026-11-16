@@ -110,7 +110,7 @@ ggplot(dashboard_summary, aes(x = Cycle, y = mean_bmi, group = 1)) +
 
 ## Interpretation
 
-For the selected income group, the table and figure describe the mean BMI pattern across available NHANES cycles in the prepared classroom dataset. The dashboard should help the audience ask better questions about pattern, timing, and context rather than treat the line as a causal explanation.
+For the selected income group, the table and figure describe the mean BMI pattern across available NHANES cycles in the prepared classroom dataset. For adults aged 20-80 in the Low Income (<1.3) group, mean BMI rose across the NHANES cycles shown, from 28.8 in 1999-2000 to 30.4 in 2021-2023, an increase of about 1.6 BMI units. Values were roughly flat through 2003-2004 (28.6-28.8), then rose to 29.3 in 2005-2006, the largest change between adjacent cycles (+0.7). Averages then held near 29.1-29.5 through 2013-2014 before climbing to 30.0 in 2015-2016 and continuing upward. These are descriptive, unweighted averages from the classroom dataset, so they describe a pattern in this sample, not a national estimate or an explanation for it.
 
 ## Limitation
 
