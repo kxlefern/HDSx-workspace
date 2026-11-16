@@ -102,7 +102,7 @@ ggplot(dashboard_summary, aes(x = Cycle, y = mean_bmi, group = 1)) +
     subtitle = "Adults age 20-80 in the prepared NHANES Health Equity classroom dataset",
     x = "NHANES cycle",
     y = "Mean BMI",
-    caption = "Descriptive, unweighted classroom summary. Missing BMI, income group, cycle, and out-of-cohort ages are excluded."
+    caption = "Descriptive, unweighted classroom summary. Missing BMI, income group, cycle, and out-of-cohort ages are excluded. Note: The 2019-2020 NHANES cycle is not included in this dataset, so the last segment of the line spans more than two years."
   ) +
   theme_minimal(base_size = 12) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
