@@ -1,0 +1,4 @@
+- Date tested: 16-Nov-2026
+- Render path: Opened `assignments/assignment07-dashboard/submission/dashboard.qmd` in Codespaces and ran Command Palette > Quarto: Render Document.
+- Values tried: `"Low Income (<1.3)"` and `"Middle Income"`
+- Result: Both renders finished with no errors. The title, table, and plot updated for the second group "Middle Income", the caption still named the dataset, exclusions, and limitation, and the rendered `.html` looked correct when opened in the VS Code preview.
