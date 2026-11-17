@@ -1,0 +1,1 @@
+I used AI to help with wording my interpretation of the table, limitation sentense, and wording my submission notes. No row-level data were pasted into any AI tool. Only aggregate data was shared like the summary table. 
