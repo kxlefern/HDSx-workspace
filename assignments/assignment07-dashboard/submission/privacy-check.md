@@ -1,0 +1,3 @@
+- The dashboard uses the prepared NHANES Health Equity classroom CSV, derived from public-use NHANES files and cached in the repository, for descriptive classroom learning only, not population inference.
+- The rendered dashboard and preview show aggregate summaries only (cycle-level n and mean BMI), with no row-level records or data previews.
+- I did not share row-level records with any external AI tool.
