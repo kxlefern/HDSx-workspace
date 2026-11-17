@@ -1,0 +1,1 @@
+This dashboard is a descriptive, unweighted summary of mean BMI for adults aged 20-80 with complete BMI, income group, and cycle data in the prepared classroom dataset; it cannot establish that income affects BMI, and it is not a population or national estimate.
